@@ -1,0 +1,4 @@
+dist/
+etc/
+generated/
+node_modules/
