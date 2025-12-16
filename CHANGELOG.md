@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/blaahaj/sync-github-repo-settings/compare/v1.0.0...v1.0.1) (2025-12-16)
+
+
+### Bug Fixes
+
+* name is now 'sync-github-repo-settings'; improve docs ([#3](https://github.com/blaahaj/sync-github-repo-settings/issues/3)) ([12bffdb](https://github.com/blaahaj/sync-github-repo-settings/commit/12bffdb519b19011624abd847b0c1bbe5f72a62d))
+
 ## 1.0.0 (2025-12-15)
 
 
