@@ -1,65 +1,19 @@
-# messing-with-github-graphql
+# @blaahaj/sync-github-repo-settings
 
-Though this really needs a better name, something like:
+Manage GitHub repository settings as code.
 
-"GitHub repos IAC"
+Specifically, what can be managed is:
 
-(which makes me suspect that Terraform et al already do this. Whatever.)
+- description
+- archival
+- visibility
+- topics
 
 ## Setup
 
-Install tools as per `.tool-versions`.
+Requires `node` and `pnpm`. See `.tool-versions` for the versions this has been tested against.
 
-Then:
+## See also
 
-```shell
-pnpm clean
-pnpm install
-pnpm build
-pnpm test
-```
-
-## Usage
-
-Make sure that your GitHub API token is in the `GITHUB_TOKEN` environment variable.
-
-Decide which GitHub owner (user or organisation) you want to run the tool for.
-In this readme, we'll assume that the `GITHUB_OWNER` environment variable contains that.
-
-## First time
-
-```shell
-pnpm start --init $GITHUB_OWNER
-```
-
-This generates a local config for that owner, to match whatever is currently in GitHub.
-
-## Making a change
-
-Edit `./etc/${GITHUB_OWNER}/repositories.yaml` and make a change.
-
-For example, to add a topic to a repository, the change might look like:
-
-```diff
--     topics: []
-+     topics:
-+       - game
-```
-
-To see how the local config differs from what's in GitHub, run the tool in dry-run mode:
-
-```shell
-pnpm start --dry-run $GITHUB_OWNER
-```
-
-which might show something like:
-
-```text
-INFO: [DRY RUN] Changing topics of 'my-repo-name' from [] to ["game"]
-```
-
-To actually apply the changes, re-run without `--dry-run`:
-
-```shell
-pnpm start $GITHUB_OWNER
-```
+- [Using @blaahaj/sync-github-repo-settings](./USAGE.md)
+- [Contributing to @blaahaj/sync-github-repo-settings](./CONTRIBUTING.md)

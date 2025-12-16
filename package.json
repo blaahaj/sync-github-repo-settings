@@ -1,7 +1,7 @@
 {
   "name": "@blaahaj/sync-github-repo-settings",
   "version": "1.0.0",
-  "description": "",
+  "description": "Manage GitHub repository settings as code",
   "scripts": {
     "build": "concurrently pnpm:build:format pnpm:codegen && pnpm run build:compile",
     "build:format": "prettier --write --list-different .",
@@ -17,10 +17,10 @@
     "test:unit": "echo \"WARNING: no unit tests\" >&2"
   },
   "bin": {
-    "messing-with-github-graphql": "./dist/src/main.js"
+    "sync-github-repo-settings": "./dist/src/main.js"
   },
   "keywords": [],
-  "author": "Rachel Evans <rachelevans.org>",
+  "author": "Rachel Evans <rachel@rachelevans.org>",
   "license": "ISC",
   "packageManager": "pnpm@10.24.0",
   "type": "module",

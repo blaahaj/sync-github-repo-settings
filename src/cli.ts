@@ -1,7 +1,7 @@
 import { createArgument, createCommand, createOption } from "commander";
 
 export const parseCli = (argv: readonly string[]) => {
-  const cmd = createCommand("foobar")
+  const cmd = createCommand("sync-github-repo-settings")
     .addOption(
       createOption(
         "--init",
