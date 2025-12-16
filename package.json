@@ -1,6 +1,6 @@
 {
   "name": "@blaahaj/sync-github-repo-settings",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Manage GitHub repository settings as code",
   "scripts": {
     "build": "concurrently pnpm:build:format pnpm:codegen && pnpm run build:compile",
